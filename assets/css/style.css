@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #E7CEA6;
+    background-color: wheat;
     padding: 0;
     margin: 0;
     border: none;
@@ -24,7 +24,6 @@ body {
     width: 100vw;
     background-color: #A1C2F1;
     clear: both;
-
 }
 
 #heading {
@@ -32,7 +31,7 @@ body {
 }
 
 /* Main box with most content */
-#main-container {
+.container {
     width: 800px;
     height: 60vh;
     max-width: 80%;
@@ -41,6 +40,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
 }
 
 #flag {
@@ -61,13 +62,34 @@ body {
     margin: 5px;
 }
 
-#answer-btns {
+.answer-btns {
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
 
-#controls {
+.rules {
+    font-size: 2rem;
+    text-align: center;
+    margin: 15px;
+}
+
+.controls {
+    display: flex;
+}
+
+#start-btn, #restart-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 4rem;
+    background-color: #16FF00;
+}
+
+#start-btn:hover,
+#restart-btn:hover {
+    border: 2px solid blue;
+}
+
+.hide {
+    display: none;
 }

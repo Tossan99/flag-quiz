@@ -14,25 +14,37 @@
 
 <body>
     <!--
-    <header id="header">
+    <header class="header">
         <h1 id="heading">Flag Quiz</h1>
     </header>
 -->
-    <div id="main-container">
-        <div id="question-container" class="hide">
+    <!--Main container, includes all content in the box-->
+    <div class="container">
+
+        <!--Question and answer container-->
+        <div class="question-container hide">
+            <h2>Which country does this flag belong to?</h2>
             <div id="flag"></div>
-            <div id="answer-btns">
+            <div class="answer-btns">
                 <button class="btn">Placeholder</button>
                 <button class="btn">Placeholder</button>
                 <button class="btn">Placeholder</button>
                 <button class="btn">Placeholder</button>
             </div>
         </div>
-        <div id="controls">
-            <button class="start-btn btn">Start!</button>
-            <button class="restart-btn btn hide">Restart!</button>
+
+        <!--Rules-->
+        <div class="rules">
+            <p>Rules: Click on the country that the flag shown belongs to, there will be 10 questions and you have 5 seconds to answer each. Click the Start! button to begin. Good luck! </p>
+        </div>
+     
+        <!--Start and restart button-->
+        <div class="controls">
+            <button id="start-btn" class="btn">Start!</button>
+            <button id="restart-btn" class="btn hide">Restart!</button>
         </div>
     </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 

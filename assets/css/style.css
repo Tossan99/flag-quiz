@@ -14,20 +14,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
 
 /* Header and heading */
 #header {
-    height: 100px;
+    height: 75px;
     width: 100vw;
     background-color: #A1C2F1;
     clear: both;
 }
 
 #heading {
-    font-size: 3em;
+    font-size: 4em;
+    margin: 10px;
 }
 
 /* Main box with most content */

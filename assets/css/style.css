@@ -43,7 +43,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
+    box-shadow: 5px 5px 10px black;
+
+    
 }
 
 .question-container {

@@ -1,39 +1,78 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# FLAG QUIZ
 
-Welcome,
+Flag Quiz is a website for everyone that want to challenge themselves and test their vexillology skills!
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **July 26th, 2023**
+![Responsice Mockup](assets/images/)
 
-## Codeanywhere Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Logo
 
-`python3 -m http.server`
+![Logo](assets/images/)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Header
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+![header](assets/images/)
 
-`http_server`
+### Landing page
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Landing Page](assets/images/)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Design
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Color Palette](assets/images/)
 
-To log into the Heroku toolbelt CLI:
+### Features Left to Implement
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Testing
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Responsiveness
 
----
+### Validator testing
 
-Happy coding!
+- HTML
+  - All html pages have passed through the official [W3C validator](https://validator.w3.org/).
+- CSS
+  - The CSS code have passed through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
+- JS
+  - The JS code have passed through[]().
+
+### Accessibility
+
+- All pages have been checked with lighthouse and passed with a good score.
+
+![Lighthouse](assets/images/)
+
+### Unfixed Bugs
+
+## Development
+
+### Wireframe
+
+- To begin with I made a Wireframe to get an idea of what the project would look like. It was made through the website [Figma](https://www.figma.com).
+
+![Wireframe](assets/images/wireframe.jpg)
+
+## Deployment
+
+- The whole project was deployed to GitHub pages using the Main Branch source.
+- All code and files has been submited to Github by using the Git commands "git add", "git commit" and "git push".
+- GitHub pages can be reached by opening the settings tab and then open the pages tab.
+
+## Credits
+
+### Content
+
+- The code snippet to create the shadows around the main container was learnt from this [CSS leason](https://www.w3schools.com/css/css3_shadows.asp).
+
+- The flag icons in the header is implemented from [Font Awsome](https://fontawesome.com/).
+
+- The color palette used is from [Color Hunt](https://colorhunt.co/palette/e7cea60a6ebd5a96e3a1c2f1).
+
+- All fonts are from [Google Fonts](https://fonts.google.com/).
+
+### Media
+
+- All images used were taken from [Pexels](https://www.pexels.com/).

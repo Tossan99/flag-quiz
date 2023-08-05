@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: REM, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #E7CEA6;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header and heading */
+#header {
+    height: 100px;
+    width: 100vw;
+    background-color: #A1C2F1;
+    clear: both;
+
+}
+
+#heading {
+    font-size: 3em;
+}
+
+/* Main box with most content */
+#main-container {
+    width: 800px;
+    height: 60vh;
+    max-width: 80%;
+    background-color: #A1C2F1;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flag {
+    height: 20vh;
+    width: 60vw;
+    max-width: 400px;
+    background-color: #0A6EBD;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.btn {
+    padding: 20px;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#answer-btns {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

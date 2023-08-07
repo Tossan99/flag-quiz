@@ -102,13 +102,13 @@ body {
     
 }
 
-#start-btn, #restart-btn {
+#start-btn, #next-btn {
     font-size: 4rem;
     background-color: #16FF00;
 }
 
 #start-btn:hover,
-#restart-btn:hover {
+#next-btn:hover {
     border: 2px solid blue;
 }
 

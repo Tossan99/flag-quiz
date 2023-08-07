@@ -43,12 +43,29 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*border: 2px solid black;*/
+    border: 1px solid black;
     box-shadow: 5px 5px 10px black;
-
-    
 }
 
+/*Flag*/
+#flag-container {
+    height: 25vh;
+    width: 60vw;
+    max-width: 400px;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#flag {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Flag and answer buttons container*/
 .question-container {
     display: flex;
     justify-content: center;
@@ -56,16 +73,7 @@ body {
     flex-direction: column;
 }
 
-#flag {
-    height: 20vh;
-    width: 60vw;
-    max-width: 400px;
-    background-color: #0A6EBD;
-    border-radius: 25px;
-    border: 2px solid black;
-    margin: 20px 0;
-}
-
+/*Buttons*/
 .btn {
     padding: 20px;
     background-color: white;
@@ -80,12 +88,14 @@ body {
     grid-template-columns: repeat(2, auto);
 }
 
+/*Rules text*/
 #rules {
     font-size: 2rem;
     text-align: center;
     margin: 15px;
 }
 
+/*Start and restart buttons*/
 .controls {
     
 }
@@ -100,6 +110,7 @@ body {
     border: 2px solid blue;
 }
 
+/*Class to hide elements*/
 .hide {
     display: none;
 }

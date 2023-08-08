@@ -36,6 +36,11 @@ body {
     margin: 10px;
 }
 
+#question {
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Main box with most content */
 .container {
     width: 80vw;

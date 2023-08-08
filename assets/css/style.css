@@ -67,12 +67,9 @@ body {
     background-position: center;
 }
 
-/*Flag and answer buttons container*/
-.question-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.btn-layout {
+    display: grid;
+    grid-template-columns: repeat(2, auto)
 }
 
 /*Buttons*/
@@ -83,11 +80,6 @@ body {
     border-radius: 25px;
     border: 2px solid black;
     margin: 5px;
-}
-
-.answer-btns {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
 }
 
 /*Rules text*/
@@ -110,6 +102,14 @@ body {
 #start-btn:hover,
 #next-btn:hover {
     border: 2px solid blue;
+}
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
 }
 
 /*Class to hide elements*/

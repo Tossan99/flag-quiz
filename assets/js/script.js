@@ -1,21 +1,20 @@
 const startButton = document.getElementById("start-btn")
 const nextButton = document.getElementById("next-btn")
-const questionContainer = document.getElementsByClassName("question-container")[0]
+const questionContainer = document.getElementById("question-container")
 const rules = document.getElementById("rules")
-const answerButtons = document.getElementsByClassName("answer-btns")[0]
+const answerButtons = document.getElementById("answer-btns")
 const flag = document.getElementById("flag")
 
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
-    qurentQuestionIndex++
+    currentQuestionIndex++
     setNextQuestion()
 })
 
 
 function startGame() {
-    console.log("Started!")
     rules.classList.add("hide");
     startButton.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -25,11 +24,11 @@ function startGame() {
 }
 
 function setNextQuestion() {
-    showFlag(shuffledQuestions[currentQuestionIndex])
-    reset()
+    reset();
+    showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-function showFlag(question) {
+function showQuestion(question) {
     flag.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement("button")
@@ -44,15 +43,41 @@ function showFlag(question) {
 }
 
 function reset() {
-    clearStatusClass(document.body);
+    clearStatusClass(document.body)
     nextButton.classList.add("hide");
     while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild);
+        answerButtons.removeChild
+        (answerButtons.firstChild);
     }
 }
 
-function selectAnswer() {
+function selectAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtons.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove("hide")
+    } else {
+        startButton.innerText = "Restart!"
+        startButton.classList.remove("hide")
+    }
+}
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add("correct")
+    } else {
+        element.classList.add("wrong")
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove("correct")
+    element.classList.remove("wrong")
 }
 
 

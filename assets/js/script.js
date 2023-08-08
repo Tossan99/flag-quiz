@@ -83,93 +83,93 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: "flag of norway",
+        question: "Flag of Belgium",
         answers: [
             {text: "Sweden", correct: false},
-            {text: "Denmark", correct: false},
-            {text: "Finland", correct: false},
-            {text: "Norway", correct: true}
+            {text: "Belgium", correct: true},
+            {text: "Irland", correct: false},
+            {text: "Germany", correct: false}
         ]
     },
     {
-        question: "flag of sweden",
+        question: "Flag of Spain",
         answers: [
-            { text: "Sweden", correct: true },
-            { text: "Denmark", correct: false },
+            { text: "Spain", correct: true },
+            { text: "Portugal", correct: false },
+            { text: "france", correct: false },
+            { text: "Greece", correct: false }
+        ]
+    },
+    {
+        question: "Flag of Slovakia",
+        answers: [
+            { text: "Estonia", correct: false },
+            { text: "Slovakia", correct: true },
+            { text: "Belarus", correct: false },
+            { text: "Slovenia", correct: false }
+        ]
+    },
+    {
+        question: "Flag of Iceland",
+        answers: [
             { text: "Finland", correct: false },
+            { text: "Iceland", correct: true },
+            { text: "Denmark", correct: false },
             { text: "Norway", correct: false }
         ]
     },
     {
-        question: "flag of norway",
+        question: "Flag of Italy",
         answers: [
-            { text: "Sweden", correct: false },
-            { text: "Denmark", correct: false },
-            { text: "Finland", correct: false },
-            { text: "Norway", correct: true }
+            { text: "Switzerland", correct: false },
+            { text: "France", correct: false },
+            { text: "Italy", correct: true },
+            { text: "Croatia", correct: false }
         ]
     },
     {
-        question: "flag of norway",
+        question: "Flag of Albania",
         answers: [
-            { text: "Sweden", correct: false },
-            { text: "Denmark", correct: false },
-            { text: "Finland", correct: false },
-            { text: "Norway", correct: true }
+            { text: "Macedonia", correct: false },
+            { text: "Lithuania", correct: false },
+            { text: "Montenegro", correct: false },
+            { text: "Albania", correct: true }
         ]
     },
     {
-        question: "flag of norway",
+        question: "Flag of Austria",
         answers: [
-            { text: "Sweden", correct: false },
-            { text: "Denmark", correct: false },
-            { text: "Finland", correct: false },
-            { text: "Norway", correct: true }
+            { text: "Germany", correct: false },
+            { text: "Austria", correct: true },
+            { text: "Estonia", correct: false },
+            { text: "Bulgaria", correct: false }
         ]
     },
     {
-        question: "flag of norway",
+        question: "Flag of Russia",
         answers: [
-            { text: "Sweden", correct: false },
-            { text: "Denmark", correct: false },
+            { text: "Belarus", correct: false },
+            { text: "Ukraine", correct: false },
             { text: "Finland", correct: false },
-            { text: "Norway", correct: true }
+            { text: "Russia", correct: true }
         ]
     },
     {
-        question: "flag of norway",
+        question: "Flag of Netherlands",
         answers: [
-            { text: "Sweden", correct: false },
             { text: "Denmark", correct: false },
-            { text: "Finland", correct: false },
-            { text: "Norway", correct: true }
+            { text: "Belgium", correct: false },
+            { text: "Germany", correct: false },
+            { text: "Netherlands", correct: true }
         ]
     },
     {
-        question: "flag of norway",
+        question: "flag of Sweden",
         answers: [
-            { text: "Sweden", correct: false },
-            { text: "Denmark", correct: false },
             { text: "Finland", correct: false },
-            { text: "Norway", correct: true }
-        ]
-    },
-    {
-        question: "flag of norway",
-        answers: [
-            { text: "Sweden", correct: false },
+            { text: "Norway", correct: false },
             { text: "Denmark", correct: false },
-            { text: "Finland", correct: false },
-            { text: "Norway", correct: true }
-        ]
-    },
-    {
-        question: "flag of norway",
-        answers: [
-            { text: "Sweden", correct: false },
-            { text: "Denmark", correct: false },
-            { text: "Finland", correct: false },
-            { text: "Norway", correct: true }
+            { text: "Sweden", correct: true }
         ]
     },
 

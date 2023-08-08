@@ -9,7 +9,7 @@
 
 /*Some base properties to center all content and remove default paddings, margins and borders*/
 body {
-    background-color: wheat;
+    background-color: #1D5D9B;
     padding: 0;
     margin: 0;
     border: none;
@@ -20,6 +20,8 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+
 
 /* Header and heading */
 #header {
@@ -37,9 +39,9 @@ body {
 /* Main box with most content */
 .container {
     width: 800px;
-    height: 60vh;
+    height: 80vh;
     max-width: 80%;
-    background-color: #A1C2F1;
+    background-color: white;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -75,7 +77,7 @@ body {
 /*Buttons*/
 .btn {
     padding: 20px;
-    background-color: white;
+    background-color: #068FFF;
     font-size: 1rem;
     border-radius: 25px;
     border: 2px solid black;
@@ -96,20 +98,29 @@ body {
 
 #start-btn, #next-btn {
     font-size: 4rem;
-    background-color: #16FF00;
+    background-color: #068FFF;
 }
 
 #start-btn:hover,
-#next-btn:hover {
-    border: 2px solid blue;
+#next-btn:hover,
+.btn:hover {
+    border: 2px solid #4477CE;
 }
 
-.correct {
-    background-color: green;
+.btn.correct {
+    background-color: lightgreen;
 }
 
-.wrong {
+.btn.wrong {
     background-color: red;
+}
+
+body.correct {
+    background-color: #1A5D1A;
+}
+
+body.wrong {
+    background-color: #C70039;
 }
 
 /*Class to hide elements*/

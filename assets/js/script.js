@@ -4,6 +4,7 @@ const questionContainer = document.getElementById("question-container")
 const rules = document.getElementById("rules")
 const answerButtons = document.getElementById("answer-btns")
 const flag = document.getElementById("flag")
+const flagContainer = document.getElementById("flag-container")
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -44,7 +45,8 @@ function showQuestion(question) {
 
 function reset() {
     clearStatusClass(document.body)
-    nextButton.classList.add("hide");
+    nextButton.classList.add("hide")
+    flagContainer.classList.remove("hide")
     while (answerButtons.firstChild) {
         answerButtons.removeChild
         (answerButtons.firstChild);
@@ -60,6 +62,7 @@ function selectAnswer(e) {
     })
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide")
+    flagContainer.classList.add("hide")
     } else {
         startButton.innerText = "Restart!"
         startButton.classList.remove("hide")

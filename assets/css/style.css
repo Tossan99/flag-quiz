@@ -58,7 +58,7 @@ body {
     max-width: 400px;
     border-radius: 25px;
     border: 2px solid black;
-    margin: 20px 0;
+    margin: 30px auto;
     overflow: hidden;
 }
 
@@ -99,6 +99,7 @@ body {
 #start-btn, #next-btn {
     font-size: 4rem;
     background-color: #78C1F3;
+    
 }
 
 #start-btn:hover,

@@ -30,7 +30,9 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-    flag.innerText = question.question
+
+    flag.src = question.question
+
     question.answers.forEach(answer => {
         const button = document.createElement("button")
         button.innerText = answer.text
@@ -86,7 +88,7 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: "Flag of Belgium",
+        question: "assets/images/flag.jpeg",
         answers: [
             {text: "Sweden", correct: false},
             {text: "Belgium", correct: true},
@@ -95,7 +97,7 @@ const questions = [
         ]
     },
     {
-        question: "Flag of Spain",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Spain", correct: true },
             { text: "Portugal", correct: false },
@@ -104,7 +106,7 @@ const questions = [
         ]
     },
     {
-        question: "Flag of Slovakia",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Estonia", correct: false },
             { text: "Slovakia", correct: true },
@@ -113,7 +115,7 @@ const questions = [
         ]
     },
     {
-        question: "Flag of Iceland",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Finland", correct: false },
             { text: "Iceland", correct: true },
@@ -122,7 +124,7 @@ const questions = [
         ]
     },
     {
-        question: "Flag of Italy",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Switzerland", correct: false },
             { text: "France", correct: false },
@@ -131,7 +133,7 @@ const questions = [
         ]
     },
     {
-        question: "Flag of Albania",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Macedonia", correct: false },
             { text: "Lithuania", correct: false },
@@ -140,7 +142,7 @@ const questions = [
         ]
     },
     {
-        question: "Flag of Austria",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Germany", correct: false },
             { text: "Austria", correct: true },
@@ -149,7 +151,7 @@ const questions = [
         ]
     },
     {
-        question: "Flag of Russia",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Belarus", correct: false },
             { text: "Ukraine", correct: false },
@@ -158,7 +160,7 @@ const questions = [
         ]
     },
     {
-        question: "Flag of Netherlands",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Denmark", correct: false },
             { text: "Belgium", correct: false },
@@ -167,7 +169,7 @@ const questions = [
         ]
     },
     {
-        question: "flag of Sweden",
+        question: "assets/images/flag.jpeg",
         answers: [
             { text: "Finland", correct: false },
             { text: "Norway", correct: false },

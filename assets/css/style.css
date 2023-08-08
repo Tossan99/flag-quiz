@@ -38,9 +38,10 @@ body {
 
 /* Main box with most content */
 .container {
-    width: 800px;
-    height: 80vh;
-    max-width: 80%;
+    width: 80vw;
+    height: 70vh;
+    min-height: 400px;
+    max-width: 800px;
     background-color: white;
     border-radius: 25px;
     display: flex;
@@ -56,6 +57,7 @@ body {
     height: 25vh;
     width: 60vw;
     max-width: 400px;
+    min-height: 200px;
     border-radius: 25px;
     border: 2px solid black;
     margin: 30px auto;
@@ -71,7 +73,10 @@ body {
 
 .btn-layout {
     display: grid;
-    grid-template-columns: repeat(2, auto)
+    grid-template-columns: repeat(2, auto);
+    width: 60vw;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /*Buttons*/

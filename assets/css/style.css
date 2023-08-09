@@ -55,7 +55,7 @@ body {
     max-width: 400px;
     min-height: 200px;
     border-radius: 25px;
-    margin: 30px auto;
+    margin: 20px auto;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
@@ -85,9 +85,9 @@ body {
 
 /* Buttons */
 .btn {
-    padding: 20px;
+    padding: 20px 0;
     background-color: #78C1F3;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-radius: 25px;
     border: 2px solid black;
     margin: 10px;
@@ -111,32 +111,12 @@ body {
     text-align: center;
 }
 
-#next-btn {
+#next-btn, #score-btn, #start-btn {
     font-size: 4rem;
     background-color: #78C1F3;
-    height: 30vh;
-    width: 60vw;
-    max-width: 400px;
-    min-height: 200px;
-    margin: 30px auto;
-}
+    margin: 40px;
+    padding: 20px;
 
-/* Score button */
-#score-btn {
-    font-size: 4rem;
-    background-color: #78C1F3;
-    height: 30vh;
-    width: 60vw;
-    max-width: 400px;
-    min-height: 200px;
-    margin: 30px auto;
-}
-
-/* Start button */
-#start-btn {
-    font-size: 4rem;
-    background-color: #78C1F3;
-    margin: 0 0 50px 0;
 }
 
 /* Button colors when answering right or wrong */
@@ -159,7 +139,7 @@ body.wrong {
 
 /*.selected {
     border: 1px solid black;
-}*/
+}
 
 /* Class to hide elements */
 .hide {

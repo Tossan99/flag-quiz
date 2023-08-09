@@ -22,6 +22,7 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainer.classList.remove("hide")
+    question.innerText = "Which country does this flag belong to?";
     setNextQuestion()
 }
 

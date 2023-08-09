@@ -78,16 +78,20 @@ body {
 /* Next button */
 #next-btn-container {
     text-align: center;
-    
+
 }
 
 #next-btn {
     font-size: 4rem;
     background-color: #78C1F3;
-    margin: 8vh;
+    height: 25vh;
+    width: 60vw;
+    max-width: 400px;
+    min-height: 200px;
+    margin: 30px auto;
 }
 
-#next-btn:hover{
+#next-btn:hover {
     border: 2px solid #362FD9;
 }
 
@@ -119,7 +123,7 @@ body {
 
 /* Start button */
 
-#start-btn{
+#start-btn {
     font-size: 4rem;
     background-color: #78C1F3;
 }

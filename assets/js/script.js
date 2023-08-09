@@ -1,94 +1,94 @@
-const startButton = document.getElementById("start-btn")
-const nextButton = document.getElementById("next-btn")
-const questionContainer = document.getElementById("question-container")
-const question = document.getElementById("question")
-const rules = document.getElementById("rules")
-const answerButtons = document.getElementById("answer-btns")
-const flag = document.getElementById("flag")
-const flagContainer = document.getElementById("flag-container")
+const startButton = document.getElementById("start-btn");
+const nextButton = document.getElementById("next-btn");
+const questionContainer = document.getElementById("question-container");
+const question = document.getElementById("question");
+const rules = document.getElementById("rules");
+const answerButtons = document.getElementById("answer-btns");
+const flag = document.getElementById("flag");
+const flagContainer = document.getElementById("flag-container");
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 
-startButton.addEventListener("click", startGame)
+startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
-    currentQuestionIndex++
-    setNextQuestion()
-})
+    currentQuestionIndex++;
+    setNextQuestion();
+});
 
 
 function startGame() {
     rules.classList.add("hide");
     startButton.classList.add("hide");
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questionContainer.classList.remove("hide")
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
+    questionContainer.classList.remove("hide");
     question.innerText = "Which country does this flag belong to?";
-    setNextQuestion()
+    setNextQuestion();
 }
 
 function setNextQuestion() {
     reset();
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
 
-    flag.src = question.question
+    flag.src = question.question;
 
     question.answers.forEach(answer => {
-        const button = document.createElement("button")
-        button.innerText = answer.text
-        button.classList.add("btn")
+        const button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add("btn");
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener("click", selectAnswer)
-        answerButtons.appendChild(button)
-    })
+        button.addEventListener("click", selectAnswer);
+        answerButtons.appendChild(button);
+    });
 }
 
 function reset() {
-    clearStatusClass(document.body)
-    nextButton.classList.add("hide")
-    flagContainer.classList.remove("hide")
-    answerButtons.classList.remove("hide")
+    clearStatusClass(document.body);
+    nextButton.classList.add("hide");
+    flagContainer.classList.remove("hide");
+    answerButtons.classList.remove("hide");
     while (answerButtons.firstChild) {
         answerButtons.removeChild
-        (answerButtons.firstChild);
+            (answerButtons.firstChild);
     }
 }
 
 function selectAnswer(e) {
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
     Array.from(answerButtons.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+        setStatusClass(button, button.dataset.correct);
+    });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove("hide")
-    flagContainer.classList.add("hide")
+        nextButton.classList.remove("hide");
+        flagContainer.classList.add("hide");
     } else {
-        startButton.innerText = "Restart!"
-        startButton.classList.remove("hide")
-        flagContainer.classList.add("hide")
-        answerButtons.classList.add("hide")
-        question.innerText = "Congratulations on completing the Flag Quiz! You have scored ${something"
+        startButton.innerText = "Restart!";
+        startButton.classList.remove("hide");
+        flagContainer.classList.add("hide");
+        answerButtons.classList.add("hide");
+        question.innerText = "Congratulations on completing the Flag Quiz! You have scored ${something";
     }
 }
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
-        element.classList.add("correct")
+        element.classList.add("correct");
     } else {
-        element.classList.add("wrong")
+        element.classList.add("wrong");
     }
 }
 
 function clearStatusClass(element) {
-    element.classList.remove("correct")
-    element.classList.remove("wrong")
+    element.classList.remove("correct");
+    element.classList.remove("wrong");
 }
 
 
@@ -96,10 +96,10 @@ const questions = [
     {
         question: "assets/images/flag_belgium.png",
         answers: [
-            {text: "Sweden", correct: false},
-            {text: "Belgium", correct: true},
-            {text: "Irland", correct: false},
-            {text: "Germany", correct: false}
+            { text: "Sweden", correct: false },
+            { text: "Belgium", correct: true },
+            { text: "Irland", correct: false },
+            { text: "Germany", correct: false }
         ]
     },
     {
@@ -184,4 +184,4 @@ const questions = [
         ]
     },
 
-]
+];

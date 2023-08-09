@@ -9,7 +9,10 @@ const flag = document.getElementById("flag");
 const flagContainer = document.getElementById("flag-container");
 const questionCounter = document.getElementById("question-counter")
 let shuffledQuestions, currentQuestionIndex;
-let score = 0
+let score
+let time = 10
+const countdownTimer = document.getElementById("countdown-timer");
+setInterval(updateCountdown, 1000);
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -20,19 +23,31 @@ nextButton.addEventListener("click", () => {
 checkScoreButton.addEventListener("click", endScreen)
 
 function startGame() {
-    
     rules.classList.add("hide");
     questionCounter.classList.remove("hide");
     startButton.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - .5);
+    score = 0
     currentQuestionIndex = 0;
     questionContainer.classList.remove("hide");
     question.innerText = "Which country does this flag belong to?";
+    countdownTimer.classList.remove("hide")
+    updateCountdown()
     setNextQuestion();
 }
 
+function updateCountdown() {
+    countdownTimer.innerHTML = `${time} Seconds left`;
+    time--;
+    if (time < 0 && currentQuestionIndex < 9) {
+        currentQuestionIndex++;
+        setNextQuestion();
+    } else if (time < 0 && currentQuestionIndex === 9)
+    endScreen()
+}
+
 function setNextQuestion() {
-    reset();
+    reset()
     showQuestion(shuffledQuestions[currentQuestionIndex]);
     questionCounter.innerHTML = `${currentQuestionIndex + 1}/10`;
 }
@@ -53,6 +68,7 @@ function showQuestion(question) {
 }
 
 function reset() {
+    time = 10
     clearStatusClass(document.body);
     nextButton.classList.add("hide");
     flagContainer.classList.remove("hide");
@@ -98,6 +114,7 @@ function clearStatusClass(element) {
 }
 
 function endScreen() {
+    time = 500
     clearStatusClass(document.body)
     checkScoreButton.classList.add("hide")
     startButton.innerText = "Restart!";
@@ -126,7 +143,7 @@ const questions = [
             { text: "France", correct: false },
             { text: "Greece", correct: false }
         ]
-    }/* , 
+    } , 
     {
         question: "assets/images/flag_slovakia.png",
         answers: [
@@ -198,6 +215,6 @@ const questions = [
             { text: "Denmark", correct: false },
             { text: "Sweden", correct: true }
         ]
-    },*/
+    },
 
 ];

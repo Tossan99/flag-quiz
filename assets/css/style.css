@@ -63,9 +63,9 @@ body {
     max-width: 400px;
     min-height: 200px;
     border-radius: 25px;
-    border: 2px solid black;
     margin: 30px auto;
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
 
 #flag {
@@ -75,10 +75,41 @@ body {
     background-position: center;
 }
 
+/* Rules text */
+#rules {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+}
+
+/* Buttons */
+.btn {
+    padding: 20px;
+    background-color: #78C1F3;
+    font-size: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+    margin: 10px;
+    border: 0;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(43, 44, 170, 0.4), 0 6px 20px 0 rgba(43, 44, 170, 0.35)
+}
+
+/* Answer buttons layout*/
+.btn-layout {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 60vw;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 /* Next button */
 #next-btn-container {
     text-align: center;
-
 }
 
 #next-btn {
@@ -91,46 +122,10 @@ body {
     margin: 30px auto;
 }
 
-#next-btn:hover {
-    border: 2px solid #362FD9;
-}
-
-/* Buttons */
-.btn-layout {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    width: 60vw;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.btn {
-    padding: 20px;
-    background-color: #78C1F3;
-    font-size: 1rem;
-    border-radius: 25px;
-    border: 2px solid black;
-    margin: 5px;
-}
-
-/* Rules text */
-#rules {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 15px;
-}
-
 /* Start button */
-
 #start-btn {
     font-size: 4rem;
     background-color: #78C1F3;
-}
-
-#start-btn:hover,
-.btn:hover {
-    border: 2px solid #362FD9;
 }
 
 /* Button colors when answering right or wrong */
@@ -142,6 +137,7 @@ body {
     background-color: #FF8989;
 }
 
+/* body color when answering right or wrong */
 body.correct {
     background-color: #7EAA92;
 }

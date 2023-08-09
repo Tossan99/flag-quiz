@@ -34,11 +34,6 @@ body {
     margin: 10px;
 }
 
-#question {
-    margin: 0 auto;
-    text-align: center;
-}
-
 /* Main box with most content */
 .container {
     width: 80vw;
@@ -53,6 +48,12 @@ body {
     flex-direction: column;
     border: 1px solid black;
     box-shadow: 5px 5px 10px black;
+}
+
+/*Static question above flag container*/
+#question {
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*Flag*/
@@ -72,6 +73,21 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+}
+
+/*Next button*/
+#next-btn-container {
+    text-align: center;
+}
+
+#next-btn {
+    font-size: 4rem;
+    background-color: #78C1F3;
+    margin: 8vh;
+}
+
+#next-btn:hover{
+    border: 2px solid #362FD9;
 }
 
 .btn-layout {
@@ -104,14 +120,13 @@ body {
     
 }
 
-#start-btn, #next-btn {
+#start-btn{
     font-size: 4rem;
     background-color: #78C1F3;
     
 }
 
 #start-btn:hover,
-#next-btn:hover,
 .btn:hover {
     border: 2px solid #362FD9;
 }

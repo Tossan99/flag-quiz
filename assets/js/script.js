@@ -7,8 +7,9 @@ const rules = document.getElementById("rules");
 const answerButtons = document.getElementById("answer-btns");
 const flag = document.getElementById("flag");
 const flagContainer = document.getElementById("flag-container");
-const counter = document.getElementById("counter")
+const questionCounter = document.getElementById("question-counter")
 let shuffledQuestions, currentQuestionIndex;
+let score = 0
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -21,7 +22,7 @@ checkScoreButton.addEventListener("click", endScreen)
 function startGame() {
     
     rules.classList.add("hide");
-    counter.classList.remove("hide");
+    questionCounter.classList.remove("hide");
     startButton.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
@@ -33,7 +34,7 @@ function startGame() {
 function setNextQuestion() {
     reset();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
-    counter.innerHTML = `${currentQuestionIndex + 1}/10`;
+    questionCounter.innerHTML = `${currentQuestionIndex + 1}/10`;
 }
 
 function showQuestion(question) {
@@ -70,6 +71,10 @@ function selectAnswer(e) {
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
+    if (correct) {
+        score += 1;
+        console.log(score);
+    }
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide");
         flagContainer.classList.add("hide");
@@ -82,7 +87,7 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
-        element.classList.add("correct");
+        element.classList.add("correct")
     } else {
         element.classList.add("wrong");
     }
@@ -96,13 +101,15 @@ function clearStatusClass(element) {
 function endScreen() {
     checkScoreButton.classList.add("hide")
     startButton.innerText = "Restart!";
-    count = 0
-    counter.classList.add("hide")
+    questionCounter.classList.add("hide")
     startButton.classList.remove("hide");
     flagContainer.classList.add("hide");
     answerButtons.classList.add("hide");
-    question.innerText = "Congratulations on completing the Flag Quiz! You have scored ${something";
+    question.innerText = `Congratulations on completing the Flag Quiz! You have scored ${score}/10 points!`;
+    console.log(score)
 }
+
+
 
 
 
@@ -121,7 +128,7 @@ const questions = [
         answers: [
             { text: "Spain", correct: true },
             { text: "Portugal", correct: false },
-            { text: "france", correct: false },
+            { text: "France", correct: false },
             { text: "Greece", correct: false }
         ]
     } , 

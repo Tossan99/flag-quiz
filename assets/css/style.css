@@ -83,7 +83,8 @@ body {
     margin: 15px;
 }
 
-#counter {
+/* Question qounter*/
+#question-counter {
     margin: 10 auto;
     text-align: center;
     font-weight: bold;

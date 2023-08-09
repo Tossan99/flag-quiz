@@ -4,7 +4,6 @@
 * {
     box-sizing: border-box;
     font-family: REM, sans-serif;
-    font-weight: 400;
 }
 
 /*Some base properties to center all content and remove default paddings, margins and borders*/
@@ -54,6 +53,8 @@ body {
 #question {
     margin: 0 auto;
     text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 /*Flag*/
@@ -90,6 +91,7 @@ body {
     border: 2px solid #362FD9;
 }
 
+/*Buttons*/
 .btn-layout {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -98,7 +100,6 @@ body {
     margin: 0 auto;
 }
 
-/*Buttons*/
 .btn {
     padding: 20px;
     background-color: #78C1F3;
@@ -111,6 +112,7 @@ body {
 /*Rules text*/
 #rules {
     font-size: 2rem;
+    font-weight: bold;
     text-align: center;
     margin: 15px;
 }

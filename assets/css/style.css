@@ -8,7 +8,7 @@
 
 /* Some base properties to center all content and remove default paddings, margins and borders */
 body {
-    background-color: #94ADD7;
+    background-color: #1D5D9B;
     padding: 0;
     margin: 0;
     border: none;
@@ -30,7 +30,6 @@ body {
 #heading {
     font-size: 5rem;
     margin: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Main box with most content */
@@ -86,15 +85,16 @@ body {
 /* Buttons */
 .btn {
     padding: 20px 0;
-    background-color: #78C1F3;
+    background-color: #a9def8;
     font-size: 2rem;
     border-radius: 25px;
-    border: 2px solid black;
+    border: 2px solid #a9def8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
     margin: 10px;
 }
 
 .btn:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35)
+    border: 2px solid black;
 }
 
 /* Answer buttons layout*/
@@ -109,7 +109,6 @@ body {
 /* Next, score and start buttons */
 #next-btn, #score-btn, #start-btn {
     font-size: 4rem;
-    background-color: #78C1F3;
     margin: 40px;
     padding: 20px 30px;
 }
@@ -120,24 +119,25 @@ body {
 
 /* Button colors when answering right or wrong */
 .btn.correct {
-    background-color: #CBFFA9;
+    border: 4px solid #065700ce;
 }
 
 .btn.wrong {
-    background-color: #FF8989;
+    border: 4px solid #b80034;
 }
 
-/* body color when answering right or wrong */
+/* Body color when answering right or wrong */
 body.correct {
-    background-color: #7EAA92;
+    background-color: #065700ce;
 }
 
 body.wrong {
-    background-color: #900C3F;
+    background-color: #b80034;
 }
 
-/*.selected {
-    border: 1px solid black;
+/* Border for clicked button */
+.selected {
+    border: 3px solid black;
 }
 
 /* Class to hide elements */
@@ -160,7 +160,7 @@ body.wrong {
 
     .btn {
         margin: 5px;
-        padding: 10px 0;
+        padding: 15px;
     }
 }
 

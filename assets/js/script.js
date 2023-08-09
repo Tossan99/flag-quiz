@@ -6,8 +6,16 @@ const rules = document.getElementById("rules");
 const answerButtons = document.getElementById("answer-btns");
 const flag = document.getElementById("flag");
 const flagContainer = document.getElementById("flag-container");
-
+const counter = document.getElementById("counter")
+let count = 1;
 let shuffledQuestions, currentQuestionIndex;
+
+nextButton.addEventListener("click", increaseQuestionCount)
+
+function increaseQuestionCount() {
+    count+=1
+    counter.innerHTML = `${count}/10`
+}
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -32,7 +40,6 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-
     flag.src = question.question;
 
     question.answers.forEach(answer => {
@@ -91,6 +98,8 @@ function clearStatusClass(element) {
     element.classList.remove("correct");
     element.classList.remove("wrong");
 }
+
+
 
 
 const questions = [

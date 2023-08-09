@@ -60,6 +60,7 @@ function reset() {
 
 function selectAnswer(e) {
     const selectedButton = e.target;
+    selectedButton.classList.add("selected")
     const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct);
     Array.from(answerButtons.children).forEach(button => {

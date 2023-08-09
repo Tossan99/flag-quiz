@@ -146,6 +146,10 @@ body.wrong {
     background-color: #900C3F;
 }
 
+.selected {
+ border: 1px solid black;
+}
+
 /* Class to hide elements */
 .hide {
     display: none;

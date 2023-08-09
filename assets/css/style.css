@@ -50,7 +50,7 @@ body {
 
 /* Flag container and flag*/
 #flag-container {
-    height: 25vh;
+    height: 30vh;
     width: 60vw;
     max-width: 400px;
     min-height: 200px;
@@ -115,7 +115,7 @@ body {
 #next-btn {
     font-size: 4rem;
     background-color: #78C1F3;
-    height: 25vh;
+    height: 30vh;
     width: 60vw;
     max-width: 400px;
     min-height: 200px;
@@ -126,7 +126,7 @@ body {
 #score-btn {
     font-size: 4rem;
     background-color: #78C1F3;
-    height: 25vh;
+    height: 30vh;
     width: 60vw;
     max-width: 400px;
     min-height: 200px;

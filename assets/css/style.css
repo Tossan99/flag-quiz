@@ -144,3 +144,29 @@ body.wrong {
 .hide {
     display: none;
 }
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .btn {
+        margin: 5px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        font-size: 10px;
+    }
+}
+

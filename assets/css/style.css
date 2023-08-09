@@ -22,21 +22,21 @@ body {
 
 /* Header and heading */
 #header {
-    height: 75px;
+    height: 200px;
     width: 100vw;
-    clear: both;
 }
 
 #heading {
     font-size: 5rem;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 /* Main box with most content */
 .container {
-    width: 80vw;
+    width: 90vw;
     height: 80vh;
     min-height: 400px;
+    min-width: 350px;
     max-width: 900px;
     background-color: white;
     border-radius: 25px;
@@ -44,19 +44,20 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 24px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6), 0 8px 24px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Flag container and flag*/
 #flag-container {
     height: 30vh;
     width: 60vw;
-    max-width: 400px;
-    min-height: 200px;
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 150px;
     border-radius: 25px;
     margin: 20px auto;
     overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 #flag {
@@ -101,7 +102,7 @@ body {
 .btn-layout {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    width: 60vw;
+    width: 80vw;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -159,8 +160,7 @@ body.wrong {
     }
 
     .btn {
-        margin: 5px;
-        padding: 15px;
+        margin: 7px;
     }
 }
 

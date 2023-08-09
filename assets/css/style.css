@@ -89,13 +89,12 @@ body {
     background-color: #78C1F3;
     font-size: 1.5rem;
     border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+    border: 2px solid black;
     margin: 10px;
-    border: 0;
 }
 
 .btn:hover {
-    box-shadow: 0 4px 8px 0 rgba(43, 44, 170, 0.4), 0 6px 20px 0 rgba(43, 44, 170, 0.35)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35)
 }
 
 /* Answer buttons layout*/
@@ -158,9 +157,9 @@ body.wrong {
     background-color: #900C3F;
 }
 
-.selected {
+/*.selected {
     border: 1px solid black;
-}
+}*/
 
 /* Class to hide elements */
 .hide {

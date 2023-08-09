@@ -1,6 +1,7 @@
 const startButton = document.getElementById("start-btn")
 const nextButton = document.getElementById("next-btn")
 const questionContainer = document.getElementById("question-container")
+const question = document.getElementById("question")
 const rules = document.getElementById("rules")
 const answerButtons = document.getElementById("answer-btns")
 const flag = document.getElementById("flag")
@@ -49,6 +50,7 @@ function reset() {
     clearStatusClass(document.body)
     nextButton.classList.add("hide")
     flagContainer.classList.remove("hide")
+    answerButtons.classList.remove("hide")
     while (answerButtons.firstChild) {
         answerButtons.removeChild
         (answerButtons.firstChild);
@@ -68,6 +70,9 @@ function selectAnswer(e) {
     } else {
         startButton.innerText = "Restart!"
         startButton.classList.remove("hide")
+        flagContainer.classList.add("hide")
+        answerButtons.classList.add("hide")
+        question.innerText = "Congratulations on completing the Flag Quiz! You have scored ${something"
     }
 }
 

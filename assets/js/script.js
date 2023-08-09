@@ -1,5 +1,6 @@
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
+const checkScoreButton = document.getElementById("score-btn")
 const questionContainer = document.getElementById("question-container");
 const question = document.getElementById("question");
 const rules = document.getElementById("rules");
@@ -7,10 +8,7 @@ const answerButtons = document.getElementById("answer-btns");
 const flag = document.getElementById("flag");
 const flagContainer = document.getElementById("flag-container");
 const counter = document.getElementById("counter")
-let count = 1;
 let shuffledQuestions, currentQuestionIndex;
-
-nextButton.addEventListener("click", increaseQuestionCount)
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -18,8 +16,10 @@ nextButton.addEventListener("click", () => {
     setNextQuestion();
 });
 
+checkScoreButton.addEventListener("click", endScreen)
 
 function startGame() {
+    
     rules.classList.add("hide");
     counter.classList.remove("hide");
     startButton.classList.add("hide");
@@ -33,6 +33,7 @@ function startGame() {
 function setNextQuestion() {
     reset();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
+    counter.innerHTML = `${currentQuestionIndex + 1}/10`;
 }
 
 function showQuestion(question) {
@@ -48,11 +49,6 @@ function showQuestion(question) {
         button.addEventListener("click", selectAnswer);
         answerButtons.appendChild(button);
     });
-}
-
-function increaseQuestionCount() {
-    count += 1;
-    counter.innerHTML = `${count}/10`;
 }
 
 function reset() {
@@ -78,7 +74,8 @@ function selectAnswer(e) {
         nextButton.classList.remove("hide");
         flagContainer.classList.add("hide");
     } else {
-        endScreen()
+        flagContainer.classList.add("hide")
+        checkScoreButton.classList.remove("hide")
     }
 }
 
@@ -97,6 +94,7 @@ function clearStatusClass(element) {
 }
 
 function endScreen() {
+    checkScoreButton.classList.add("hide")
     startButton.innerText = "Restart!";
     count = 0
     counter.classList.add("hide")
@@ -126,7 +124,7 @@ const questions = [
             { text: "france", correct: false },
             { text: "Greece", correct: false }
         ]
-    },
+    } , 
     {
         question: "assets/images/flag_slovakia.png",
         answers: [

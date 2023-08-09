@@ -129,6 +129,17 @@ body {
     margin: 30px auto;
 }
 
+/* Score button */
+#score-btn {
+    font-size: 4rem;
+    background-color: #78C1F3;
+    height: 25vh;
+    width: 60vw;
+    max-width: 400px;
+    min-height: 200px;
+    margin: 30px auto;
+}
+
 /* Start button */
 #start-btn {
     font-size: 4rem;

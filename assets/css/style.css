@@ -48,14 +48,6 @@ body {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 24px 0 rgba(0, 0, 0, 0.35);
 }
 
-/* Static question above flag container */
-#question {
-    margin: 0 auto;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
 /* Flag container and flag*/
 #flag-container {
     height: 25vh;
@@ -75,12 +67,12 @@ body {
     background-position: center;
 }
 
-/* Rules text */
-#rules {
+/* Text */
+.text {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin: 15px;
+    margin: 10px 30px;
 }
 
 /* Question qounter*/

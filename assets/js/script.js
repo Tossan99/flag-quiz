@@ -108,10 +108,6 @@ function endScreen() {
     question.innerText = `Congratulations on completing the Flag Quiz! You have scored ${score}/10 points!`;
 }
 
-
-
-
-
 const questions = [
     {
         question: "assets/images/flag_belgium.png",
@@ -130,7 +126,7 @@ const questions = [
             { text: "France", correct: false },
             { text: "Greece", correct: false }
         ]
-    } , 
+    }/* , 
     {
         question: "assets/images/flag_slovakia.png",
         answers: [
@@ -202,6 +198,6 @@ const questions = [
             { text: "Denmark", correct: false },
             { text: "Sweden", correct: true }
         ]
-    },
+    },*/
 
 ];

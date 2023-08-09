@@ -73,7 +73,6 @@ function selectAnswer(e) {
     });
     if (correct) {
         score += 1;
-        console.log(score);
     }
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide");
@@ -99,6 +98,7 @@ function clearStatusClass(element) {
 }
 
 function endScreen() {
+    clearStatusClass(document.body)
     checkScoreButton.classList.add("hide")
     startButton.innerText = "Restart!";
     questionCounter.classList.add("hide")
@@ -106,7 +106,6 @@ function endScreen() {
     flagContainer.classList.add("hide");
     answerButtons.classList.add("hide");
     question.innerText = `Congratulations on completing the Flag Quiz! You have scored ${score}/10 points!`;
-    console.log(score)
 }
 
 

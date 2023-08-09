@@ -12,11 +12,6 @@ let shuffledQuestions, currentQuestionIndex;
 
 nextButton.addEventListener("click", increaseQuestionCount)
 
-function increaseQuestionCount() {
-    count+=1
-    counter.innerHTML = `${count}/10`
-}
-
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
@@ -26,6 +21,7 @@ nextButton.addEventListener("click", () => {
 
 function startGame() {
     rules.classList.add("hide");
+    counter.classList.remove("hide");
     startButton.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
@@ -54,6 +50,11 @@ function showQuestion(question) {
     });
 }
 
+function increaseQuestionCount() {
+    count += 1;
+    counter.innerHTML = `${count}/10`;
+}
+
 function reset() {
     clearStatusClass(document.body);
     nextButton.classList.add("hide");
@@ -77,11 +78,7 @@ function selectAnswer(e) {
         nextButton.classList.remove("hide");
         flagContainer.classList.add("hide");
     } else {
-        startButton.innerText = "Restart!";
-        startButton.classList.remove("hide");
-        flagContainer.classList.add("hide");
-        answerButtons.classList.add("hide");
-        question.innerText = "Congratulations on completing the Flag Quiz! You have scored ${something";
+        endScreen()
     }
 }
 
@@ -99,6 +96,15 @@ function clearStatusClass(element) {
     element.classList.remove("wrong");
 }
 
+function endScreen() {
+    startButton.innerText = "Restart!";
+    count = 0
+    counter.classList.add("hide")
+    startButton.classList.remove("hide");
+    flagContainer.classList.add("hide");
+    answerButtons.classList.add("hide");
+    question.innerText = "Congratulations on completing the Flag Quiz! You have scored ${something";
+}
 
 
 

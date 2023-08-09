@@ -83,6 +83,13 @@ body {
     margin: 15px;
 }
 
+#counter {
+    margin: 10 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 /* Buttons */
 .btn {
     padding: 20px;
@@ -147,7 +154,7 @@ body.wrong {
 }
 
 .selected {
- border: 1px solid black;
+    border: 1px solid black;
 }
 
 /* Class to hide elements */

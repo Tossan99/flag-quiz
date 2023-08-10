@@ -63,22 +63,77 @@ One Wireframe was created for desktop using [Figma](https://www.figma.com).
 
 ![Wireframe](assets/readme-images/wireframe.jpg)
 
+---
+
 ## Features
+
+The website consists of only the index page that have 2 sections. The header and the main container that contains all other content.
+
+### Favicon
+
+The page have a simple favicon of a blue flag
+
+![Favicon](assets/readme-images/flag-quiz-favicon.jpg)
 
 ### Logo
 
-![Logo](assets/images/)
+The logo is centered in the top of the page above the main container that contains all other content. It's in big bold font so it stands out among the bright colors.
 
-### Header
+![Logo](assets/readme-images/flag-quiz-logo.jpg)
 
-![header](assets/images/)
+### Landing Page
 
-### Landing page
+The landing page is simple and clearly indicates that the user have found it's way to the correct website.
 
-![Landing Page](assets/images/)
+![Landing Page](assets/readme-images/flag-quiz-landing-page.jpg)
+
+### Buttons
+
+All buttons are styled the same with a light blue color, black text, a slight box shadow and a thin black border when hovering the mouse over it.
+
+- Start Button
+    - The start button starts the quiz when clicked
+    ![Start Button](assets/readme-images/flag-quiz-start.jpg)
+
+- Answer Buttons
+    - The answer buttons display different options to choose from and change colors after one has been clicked. Red for the wrong options and green for the right one.
+    ![Answer Buttons](assets/readme-images/flag-quiz-answer.jpg)
+
+- Next Button
+    - When clicked, the next button continue to the next question but only shows up after one of the answer buttons has been clicked.
+    ![Next Button](assets/readme-images/flag-quiz-next.jpg)
+
+- Check Score Button
+    - When clicked, the check score button continue to the final page but only shows up after all questions have been answered.
+    ![Check Score Button](assets/readme-images/flag-quiz-score.jpg)
+- Restart Button
+    - When clicked, the restart button resets the quiz so the quiz can be played again. This button only shows up after the quiz is finished.
+    ![Restart Button](assets/readme-images/flag-quiz-restart.jpg)
+
+### Question
+
+This section displays a random flag and the question "Which country does this flag belong to?" 
+
+![Question Section](assets/readme-images/flag-quiz-question.jpg)
+
+### Timer
+
+The timer counts down from 10 seconds and resets every time the next button is clicked and a new question is displayed. If the user doesn't click any of the answer buttons before the timer goes to 0 the next question will be displayed and the user miss the chance to score a point on the question skipped.
+
+![Timer](assets/readme-images/flag-quiz-timer.jpg)
+
+### Question Counter
+
+The question counter displays which question the user is currently on.
+
+![Question Counter](assets/readme-images/flag-quiz-counter.jpg)
 
 
-![Color Palette](assets/images/)
+### End Section
+
+The end section is displayed after the user has answered all questions and clicked the "Check Score" button. The section displays how many questions the user answered right on and displays the "Restart!" button that restarts the quiz.
+
+![End Section](assets/readme-images/flag-quiz-endscreen.jpg)
 
 ### Features Left to Implement
 

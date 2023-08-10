@@ -2,7 +2,7 @@
 
 Flag Quiz is a website for everyone that want to challenge themselves and test their vexillology skills!
 
-Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
+Visit [Flag Quiz!](https://tossan99.github.io/flag-quiz2/)
 
 ![Responsice Mockup](assets/readme-images/am-i-responsive.jpg)
 
@@ -10,42 +10,37 @@ Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
 
 ## CONTENTS
 
-* [Design](#design)
-  * [Colour Scheme](#colour-scheme)
-  * [Typography](#typography)
-  * [Wireframes](#wireframes)
-
-* [Features](#features) 
-  * [Logo](#logo)
-  * [Landing Page](#landing-page)
-  * [Buttons](#buttons)
-  * [Question](#question)
-  * [Timer](#timer)
-  * [End Section](#end-section)
-  * [Features Left to Implement](#features-left-to-implement)
-  * [Accessibility](#accessibility)
-
-* [Deployment & Local Development](#deployment--local-development)
-  * [Deployment](#deployment)
-  * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
-
-* [Testing](#testing)
-  * [Testing](#testing)
-  * [Testing](#testing)
-  * [Testing](#testing)
-  * [Testing](#testing)
-
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
-
-* [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-  * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
+- [FLAG QUIZ](#flag-quiz)
+  - [CONTENTS](#contents)
+  - [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Favicon](#favicon)
+    - [Logo](#logo)
+    - [Landing Page](#landing-page)
+    - [Buttons](#buttons)
+    - [Question](#question)
+    - [Timer](#timer)
+    - [Question Counter](#question-counter)
+    - [End Section](#end-section)
+    - [Features Left to Implement](#features-left-to-implement)
+    - [Accessibility](#accessibility)
+  - [Deployment \& Local Development](#deployment--local-development)
+    - [Deployment](#deployment)
+    - [Local Development](#local-development)
+      - [How to Fork](#how-to-fork)
+      - [How to Clone](#how-to-clone)
+  - [Testing](#testing)
+    - [Buttons](#buttons-1)
+    - [Responsiveness](#responsiveness)
+    - [Validator testing](#validator-testing)
+    - [Unfixed Bugs](#unfixed-bugs)
+  - [Credits](#credits)
+    - [Code Used](#code-used)
+    - [Content](#content)
+    - [Media](#media)
 
 ---
 
@@ -201,22 +196,34 @@ To clone the repository:
 
 ## Testing
 
+### Buttons
+
+- All buttons work correctly
+
 ### Responsiveness
+
+- All sections of the website has been rigorously tested for responsiveness from 375px width, 650px height and up.
+  
+- No images are stretched or pixelated.
+  
+- No element owerlap eachother
 
 ### Validator testing
 
 - HTML
   - All html pages have passed through the official [W3C validator](https://validator.w3.org/).
 - CSS
-  - The CSS code have passed through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
+  - The CSS code have passed through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/).
 - JS
-  - The JS code have passed through[]().
+  - The JS code have passed through [Jshint](https://jshint.com/).
 
-- All pages have been checked with lighthouse and passed with a good score.
+- All sections of the website have been checked with lighthouse and passed with a good score.
 
-![Lighthouse](assets/images/)
+![Lighthouse](assets/readme-images/lighthouse.jpg)
 
 ### Unfixed Bugs
+
+There
 
 ---
 
@@ -224,16 +231,29 @@ To clone the repository:
 
 ### Code Used
 
-### Content
+During the development of the Java Script behind parts of the website i took inspiration from two different tutorials of how to make the engaine of the quiz. 
 
-- The code snippet to create the shadows around the main container was learnt from this [CSS leason](https://www.w3schools.com/css/css3_shadows.asp).
+[Tutorial 1](https://www.youtube.com/watch?v=riDzcEQbX6k) and [Tutorial 2](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1571s).
+
+I also used parts of [this](https://www.youtube.com/watch?v=4piMZDO5IOI) guide to create a timer for the quiz. 
+
+From [this](https://www.w3schools.com/css/css3_shadows.asp) CSS leason i learnt how to create box shadows.
+
+
+### Content
 
 - The flag icons in the header is implemented from [Font Awsome](https://fontawesome.com/).
 
-- The color palette used is from [Color Hunt](https://colorhunt.co/palette/e7cea60a6ebd5a96e3a1c2f1).
+- The colors used was found on [Color Hunt](https://colorhunt.co/).
 
 - All fonts are from [Google Fonts](https://fonts.google.com/).
 
+- The Wireframe was created with [Figma](https://www.figma.com/).
+
+- The color palette image was created with [coolors](https://coolors.co/).
+
 ### Media
 
-- All images used were taken from [Pexels](https://www.pexels.com/).
+- All images used were taken from [Wikipedia](https://www.wikipedia.com/).
+
+- The favicon was taken from [this source](https://www.iconfinder.com/icons/85367/blue_flag_icon).

@@ -125,7 +125,7 @@ function endScreen() {
     startButton.classList.remove("hide");
     flagContainer.classList.add("hide");
     answerButtons.classList.add("hide");
-    question.innerText = `Congratulations on completing the Flag Quiz! You have scored ${score}/10 points!`;
+    question.innerText = `Congratulations on completing the Flag Quiz! You have answerd right on ${score} out of 10 flags!`;
 }
 
 const questions = [

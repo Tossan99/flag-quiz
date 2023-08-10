@@ -10,9 +10,9 @@ const flagContainer = document.getElementById("flag-container");
 const questionCounter = document.getElementById("question-counter")
 let shuffledQuestions, currentQuestionIndex;
 let score
-let time = 10
+let time = 99999
+let timer = setInterval(updateCountdown, 1000);
 const countdownTimer = document.getElementById("countdown-timer");
-setInterval(updateCountdown, 1000);
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -23,6 +23,7 @@ nextButton.addEventListener("click", () => {
 checkScoreButton.addEventListener("click", endScreen)
 
 function startGame() {
+    time = 10
     rules.classList.add("hide");
     questionCounter.classList.remove("hide");
     startButton.classList.add("hide");
@@ -42,6 +43,7 @@ function updateCountdown() {
     if (time < 0 && currentQuestionIndex < 9) {
         currentQuestionIndex++;
         setNextQuestion();
+        console.log("next")
     } else if (time < 0 && currentQuestionIndex === 9)
     endScreen()
 }
@@ -114,7 +116,8 @@ function clearStatusClass(element) {
 }
 
 function endScreen() {
-    time = 500
+    time = 10000
+    countdownTimer.classList.add("hide")
     clearStatusClass(document.body)
     checkScoreButton.classList.add("hide")
     startButton.innerText = "Restart!";

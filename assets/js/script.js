@@ -1,3 +1,4 @@
+// All varibales used in the code
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const checkScoreButton = document.getElementById("score-btn");
@@ -11,17 +12,22 @@ const questionCounter = document.getElementById("question-counter");
 let shuffledQuestions, currentQuestionIndex;
 let score;
 let time = 1000000;
+
+//Timer
 setInterval(updateCountdown, 1000);
 const countdownTimer = document.getElementById("countdown-timer");
 
+// Evenlistner to start game when "Start" button is pressed
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
     setNextQuestion();
 });
 
+// Evenlistner to go to end screen when "check score" button is pressed
 checkScoreButton.addEventListener("click", endScreen);
 
+//Starts the game when called
 function startGame() {
     time = 10;
     rules.classList.add("hide");
@@ -37,6 +43,7 @@ function startGame() {
     setNextQuestion();
 }
 
+//Function that uppdates timer and calls other function when time = 0
 function updateCountdown() {
     countdownTimer.innerHTML = `${time} Seconds left`;
     time--;
@@ -47,12 +54,14 @@ function updateCountdown() {
     endScreen();
 }
 
+//Function ques the next question when called
 function setNextQuestion() {
     reset();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
     questionCounter.innerHTML = `${currentQuestionIndex + 1}/10`;
 }
 
+//Function that shows next question when called
 function showQuestion(question) {
     flag.src = question.question;
 
@@ -68,6 +77,7 @@ function showQuestion(question) {
     });
 }
 
+//Resets the game when called
 function reset() {
     time = 10;
     clearStatusClass(document.body);
@@ -80,6 +90,7 @@ function reset() {
     }
 }
 
+//Function to select answers
 function selectAnswer(e) {
     const selectedButton = e.target;
     selectedButton.classList.add("selected");
@@ -100,6 +111,8 @@ function selectAnswer(e) {
     }
 }
 
+
+//Function that sets green and red colors to body and element when called
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -109,11 +122,13 @@ function setStatusClass(element, correct) {
     }
 }
 
+//Function that clears green and red colors when called
 function clearStatusClass(element) {
     element.classList.remove("correct");
     element.classList.remove("wrong");
 }
 
+//Function that goes to end screen when called
 function endScreen() {
     time = 1000000;
     countdownTimer.classList.add("hide");
@@ -127,6 +142,7 @@ function endScreen() {
     question.innerText = `Congratulations on completing the Flag Quiz! You have answerd right on ${score} out of 10 flags!`;
 }
 
+//Array for all questions and answers
 const questions = [
     {
         question: "assets/images/flag_belgium.png",

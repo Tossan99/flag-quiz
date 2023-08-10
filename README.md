@@ -228,6 +228,8 @@ To clone the repository:
 
 ### Unfixed Bugs
 
+There is a big bug that i did not have time to solve. When pressing an answer button several times it continues to count points so the user can cheat and get as many points as he or she wants.
+
 There
 
 ---

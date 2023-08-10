@@ -41,6 +41,27 @@ Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
 
 ---
 
+## Design
+
+### Colour Scheme
+
+I wanted to choose one color that goes well with red and green since those colors indicate if you have answered right or wrong in the quiz. The choice was hard but it came down to blue.
+
+![Color Palette](assets/readme-images/color-palette.jpg)
+
+### Typography
+
+Google Fonts was used to import the chosen fonts for use in the site.
+
+I have chosen to use the REM font in bold format since it stands out among all the bright colors and is easy to read.
+
+![Google Fonts](assets/readme-images/google-fonts.jpg)
+
+### Wireframes
+
+One Wireframe was created for desktop using [Figma](https://www.figma.com).
+
+![Wireframe](assets/readme-images/wireframe.jpg)
 
 ## Features
 
@@ -56,7 +77,6 @@ Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
 
 ![Landing Page](assets/images/)
 
-### Design
 
 ![Color Palette](assets/images/)
 

@@ -137,6 +137,21 @@ The end section is displayed after the user has answered all questions and click
 
 ### Features Left to Implement
 
+- Score message 
+   - I would like to make the message in the end change depending on how good the user answered on the questions.
+
+- Highscore
+    - I would like to add a highscore section to the end page.
+
+- Accessible to visually impaired users
+    - I would like to implement alt texts for all flags that describes the flags so visually impaired users could also enjoy this quiz.
+
+### Accessibility
+
+This website is unfortunately not very accessible to visually impaired users since the goal of the quiz is to recognize what the different flags looks like and there is no alt text to describe them since it was to hard to implement.
+
+With that said the website is still designed to have a sufficient color contrast throughout the site.
+
 ## Testing
 
 ### Responsiveness
@@ -150,8 +165,6 @@ The end section is displayed after the user has answered all questions and click
 - JS
   - The JS code have passed through[]().
 
-### Accessibility
-
 - All pages have been checked with lighthouse and passed with a good score.
 
 ![Lighthouse](assets/images/)
@@ -159,12 +172,6 @@ The end section is displayed after the user has answered all questions and click
 ### Unfixed Bugs
 
 ## Development
-
-### Wireframe
-
-- To begin with I made a Wireframe to get an idea of what the project would look like. It was made through the website [Figma](https://www.figma.com).
-
-![Wireframe](assets/readme-images/wireframe.jpg)
 
 ## Deployment
 

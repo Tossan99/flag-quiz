@@ -1,17 +1,17 @@
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
-const checkScoreButton = document.getElementById("score-btn")
+const checkScoreButton = document.getElementById("score-btn");
 const questionContainer = document.getElementById("question-container");
 const question = document.getElementById("question");
 const rules = document.getElementById("rules");
 const answerButtons = document.getElementById("answer-btns");
 const flag = document.getElementById("flag");
 const flagContainer = document.getElementById("flag-container");
-const questionCounter = document.getElementById("question-counter")
+const questionCounter = document.getElementById("question-counter");
 let shuffledQuestions, currentQuestionIndex;
-let score
-let time = 99999
-let timer = setInterval(updateCountdown, 1000);
+let score;
+let time = 1000000;
+setInterval(updateCountdown, 1000);
 const countdownTimer = document.getElementById("countdown-timer");
 
 startButton.addEventListener("click", startGame);
@@ -20,20 +20,20 @@ nextButton.addEventListener("click", () => {
     setNextQuestion();
 });
 
-checkScoreButton.addEventListener("click", endScreen)
+checkScoreButton.addEventListener("click", endScreen);
 
 function startGame() {
-    time = 10
+    time = 10;
     rules.classList.add("hide");
     questionCounter.classList.remove("hide");
     startButton.classList.add("hide");
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
-    score = 0
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    score = 0;
     currentQuestionIndex = 0;
     questionContainer.classList.remove("hide");
     question.innerText = "Which country does this flag belong to?";
-    countdownTimer.classList.remove("hide")
-    updateCountdown()
+    countdownTimer.classList.remove("hide");
+    updateCountdown();
     setNextQuestion();
 }
 
@@ -43,13 +43,12 @@ function updateCountdown() {
     if (time < 0 && currentQuestionIndex < 9) {
         currentQuestionIndex++;
         setNextQuestion();
-        console.log("next")
     } else if (time < 0 && currentQuestionIndex === 9)
-    endScreen()
+    endScreen();
 }
 
 function setNextQuestion() {
-    reset()
+    reset();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
     questionCounter.innerHTML = `${currentQuestionIndex + 1}/10`;
 }
@@ -70,7 +69,7 @@ function showQuestion(question) {
 }
 
 function reset() {
-    time = 10
+    time = 10;
     clearStatusClass(document.body);
     nextButton.classList.add("hide");
     flagContainer.classList.remove("hide");
@@ -83,7 +82,7 @@ function reset() {
 
 function selectAnswer(e) {
     const selectedButton = e.target;
-    selectedButton.classList.add("selected")
+    selectedButton.classList.add("selected");
     const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct);
     Array.from(answerButtons.children).forEach(button => {
@@ -96,15 +95,15 @@ function selectAnswer(e) {
         nextButton.classList.remove("hide");
         flagContainer.classList.add("hide");
     } else {
-        flagContainer.classList.add("hide")
-        checkScoreButton.classList.remove("hide")
+        flagContainer.classList.add("hide");
+        checkScoreButton.classList.remove("hide");
     }
 }
 
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
-        element.classList.add("correct")
+        element.classList.add("correct");
     } else {
         element.classList.add("wrong");
     }
@@ -116,12 +115,12 @@ function clearStatusClass(element) {
 }
 
 function endScreen() {
-    time = 10000
-    countdownTimer.classList.add("hide")
-    clearStatusClass(document.body)
-    checkScoreButton.classList.add("hide")
+    time = 1000000;
+    countdownTimer.classList.add("hide");
+    clearStatusClass(document.body);
+    checkScoreButton.classList.add("hide");
     startButton.innerText = "Restart!";
-    questionCounter.classList.add("hide")
+    questionCounter.classList.add("hide");
     startButton.classList.remove("hide");
     flagContainer.classList.add("hide");
     answerButtons.classList.add("hide");

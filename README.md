@@ -95,22 +95,27 @@ The landing page is simple and clearly indicates that the user have found it's w
 All buttons are styled the same with a light blue color, black text, a slight box shadow and a thin black border when hovering the mouse over it.
 
 - Start Button
-    - The start button starts the quiz when clicked
+    - The start button starts the quiz when clicked.
+  
     ![Start Button](assets/readme-images/flag-quiz-start.jpg)
 
 - Answer Buttons
     - The answer buttons display different options to choose from and change colors after one has been clicked. Red for the wrong options and green for the right one.
+  
     ![Answer Buttons](assets/readme-images/flag-quiz-answer.jpg)
 
 - Next Button
     - When clicked, the next button continue to the next question but only shows up after one of the answer buttons has been clicked.
+  
     ![Next Button](assets/readme-images/flag-quiz-next.jpg)
 
 - Check Score Button
     - When clicked, the check score button continue to the final page but only shows up after all questions have been answered.
+  
     ![Check Score Button](assets/readme-images/flag-quiz-score.jpg)
 - Restart Button
     - When clicked, the restart button resets the quiz so the quiz can be played again. This button only shows up after the quiz is finished.
+  
     ![Restart Button](assets/readme-images/flag-quiz-restart.jpg)
 
 ### Question
@@ -231,7 +236,7 @@ There
 
 ### Code Used
 
-During the development of the Java Script behind parts of the website i took inspiration from two different tutorials of how to make the engaine of the quiz. 
+During the development of the Java Script behind parts of the website i took inspiration from two different tutorial to make the engaine of the quiz. 
 
 [Tutorial 1](https://www.youtube.com/watch?v=riDzcEQbX6k) and [Tutorial 2](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1571s).
 

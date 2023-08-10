@@ -4,7 +4,43 @@ Flag Quiz is a website for everyone that want to challenge themselves and test t
 
 Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
 
-![Responsice Mockup](assets/images/)
+![Responsice Mockup](assets/readme-images/am-i-responsive.jpg)
+
+---
+
+## CONTENTS
+
+* [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+  * [Wireframes](#wireframes)
+
+* [Features](#features)
+  * [General Features on Each Page](#general-features-on-each-page)
+  * [Future Implementations](#future-implementations)
+  * [Accessibility](#accessibility)
+
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+
+* [Deployment & Local Development](#deployment--local-development)
+  * [Deployment](#deployment)
+  * [Local Development](#local-development)
+    * [How to Fork](#how-to-fork)
+    * [How to Clone](#how-to-clone)
+
+* [Testing](#testing)
+
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
+
+---
+
 
 ## Features
 
@@ -53,7 +89,7 @@ Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
 
 - To begin with I made a Wireframe to get an idea of what the project would look like. It was made through the website [Figma](https://www.figma.com).
 
-![Wireframe](assets/images/wireframe.jpg)
+![Wireframe](assets/readme-images/wireframe.jpg)
 
 ## Deployment
 

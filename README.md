@@ -13,17 +13,17 @@ Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
 * [Design](#design)
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
-  * [Imagery](#imagery)
   * [Wireframes](#wireframes)
 
-* [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
-  * [Future Implementations](#future-implementations)
+* [Features](#features) 
+  * [Logo](#logo)
+  * [Landing Page](#landing-page)
+  * [Buttons](#buttons)
+  * [Question](#question)
+  * [Timer](#timer)
+  * [End Section](#end-section)
+  * [Features Left to Implement](#features-left-to-implement)
   * [Accessibility](#accessibility)
-
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
 * [Deployment & Local Development](#deployment--local-development)
   * [Deployment](#deployment)
@@ -32,6 +32,14 @@ Visit [Flag Quiz](https://tossan99.github.io/flag-quiz2/)
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+  * [Testing](#testing)
+  * [Testing](#testing)
+  * [Testing](#testing)
+  * [Testing](#testing)
+
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -209,6 +217,8 @@ To clone the repository:
 ![Lighthouse](assets/images/)
 
 ### Unfixed Bugs
+
+---
 
 ## Credits
 
